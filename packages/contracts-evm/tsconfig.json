@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": false
+  },
+  "include": [
+    "./contracts/**/*",
+    "./scripts/**/*",
+    "./test/**/*",
+    "./hardhat.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cache",
+    "artifacts",
+    "typechain-types"
+  ]
+}
